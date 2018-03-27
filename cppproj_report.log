@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  27 MAR 2018 21:40
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  27 MAR 2018 21:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1870,7 +1870,7 @@ File: figures/mlp.png Graphic file (type QTm)
 File: figures/errorspace.png Graphic file (type QTm)
 
 <use  "figures/errorspace.png" > [7] [8]
-Underfull \hbox (badness 2837) in paragraph at lines 287--288
+Underfull \hbox (badness 2837) in paragraph at lines 293--294
 []\TU/TimesNewRoman(0)/m/n/12.045 Digit Recognizer[EB/OL]. (2018-03-18)[3/18]. 
 https://www.kaggle.com/c/digit-
  []
@@ -1901,19 +1901,19 @@ https://www.kaggle.com/c/digit-
 \tf@thm=\write5
 \openout5 = `cppproj_report.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
  (./cppproj_report.aux (./includefile/frontmatter.aux)
 (./includefile/backmatter.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 333.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
  ) 
 Here is how much of TeX's memory you used:
- 29481 strings out of 494921
- 560250 string characters out of 6176742
+ 29482 strings out of 494921
+ 560261 string characters out of 6176742
  599591 words of memory out of 5000000
- 33011 multiletter control sequences out of 15000+600000
+ 33012 multiletter control sequences out of 15000+600000
  15024 words of font info for 101 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  63i,12n,70p,10479b,463s stack positions out of 5000i,500n,10000p,200000b,80000s

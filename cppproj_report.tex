@@ -129,7 +129,7 @@
       则该数据的第$i$维灰度值归一化为：
 
       \begin{equation}
-        input'_{i}=\frac{input_{i}-min}{max-min}
+        input_{i}\gets \frac{input_{i}-min}{max-min}
       \end{equation}
 
     \subsection{输入数据的正向传播}
@@ -247,7 +247,7 @@
       定义隐含层到输出层边权的学习率为$\eta_{h,o}$，则$w_{i,j}$的更新公式为：
 
       \begin{equation}
-        w'_{i,j}=w_{i,j}-\eta_{h,o}\frac{\partial{E}}{\partial{w_{i,j}}}
+        w_{i,j}\gets w_{i,j}-\eta_{h,o}\frac{\partial{E}}{\partial{w_{i,j}}}
       \end{equation}
     
     \subsection{输出层偏置的权值更新}
@@ -273,6 +273,12 @@
       \begin{equation}
         \frac{\partial{E}}{\partial{b_o}}=
         (out_{o_j}-output_j)out_{o_j}(1-out_{o_j})
+      \end{equation}
+
+      定义输出层偏置权值的学习率为$\eta_{b_o}$，则$b_o$的更新公式为：
+
+      \begin{equation}
+        b_o\gets b_o-\eta_{b_o}\frac{\partial{E}}{\partial{b_o}}
       \end{equation}
 
 %%%============================================================================================================%%%
