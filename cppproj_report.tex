@@ -206,7 +206,7 @@
 
     \subsection{隐含层到输出层边权的权值更新}
       
-      设隐含层神经元$i$到输出层神经元$j$的边权为$w_{i,j}$，则总的MSE对其的偏导数为：
+      设隐含层神经元$h_i$到输出层神经元$o_j$的边权为$w_{i,j}$，则总的MSE对其的偏导数为：
 
       \begin{equation}
         \frac{\partial{E}}{\partial{w_{i,j}}}=
@@ -279,6 +279,54 @@
 
       \begin{equation}
         b_o\gets b_o-\eta_{b_o}\frac{\partial{E}}{\partial{b_o}}
+      \end{equation}
+
+    \subsection{输入层到隐含层边权的权值更新}
+
+      设输入层神经元$i_i$到隐含层神经元$h_j$的边权为$w_{i,j}$，则总的MSE对其的偏导数为：
+
+      \begin{equation}
+        \frac{\partial E}{\partial w_{i,j}}=
+        \frac{\partial E}{\partial out_{h_j}}
+        \frac{\partial out_{h_j}}{net_{h_j}}
+        \frac{net_{h_j}}{w_{i,j}}
+        \label{equa31}
+      \end{equation}
+
+      其中，
+      
+      \begin{equation}
+        \begin{split}
+        \frac{\partial E}{\partial out_{h_j}}&=
+        \sum_{k=0}^9 \frac{\partial E}{\partial out_{o_k}}
+        \frac{\partial out_{o_k}}{\partial net_{o_k}}
+        \frac{\partial net_{o_k}}{\partial out_{h_j}} 
+        \\
+        &=
+        \sum_{k=0}^9
+        (out_{o_k}-output_k)
+        out_{o_k}(1-out_{o_k})
+        w_{h_j,o_k}
+        \end{split}
+        \label{equa32}
+      \end{equation}
+
+      \begin{equation}
+        \frac{\partial out_{h_j}}{net_{h_j}}=
+        out_{h_j}(1-out_{h_j})
+        \label{equa33}
+      \end{equation}
+
+      \begin{equation}
+        \frac{net_{h_j}}{w_{i,j}}=
+        input_i
+        \label{equa34}
+      \end{equation}
+
+      定义输入层到隐含层边权权值的学习率为$\eta_{i,h}$，则$w_{i,j}$的更新公式为：
+
+      \begin{equation}
+        w_{i,j} \gets w_{i,j} - \eta_{i,h} \frac{\partial E} {\partial w_{i,j}}
       \end{equation}
 
 %%%============================================================================================================%%%

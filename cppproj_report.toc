@@ -12,9 +12,10 @@
 \contentsline {section}{\numberline {3.4}反向传播算法}{7}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}隐含层到输出层边权的权值更新}{7}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}输出层偏置的权值更新}{8}{subsection.3.4.2}
-\contentsline {chapter}{参考文献}{9}{section*.6}
-\contentsline {chapter}{致谢}{10}{chapter*.8}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}测试}{11}{appendix.A}
-\contentsline {section}{\numberline {A.1}第一个测试}{11}{section.A.1}
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}附录测试}{12}{appendix.B}
-\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}附录测试}{13}{appendix.C}
+\contentsline {subsection}{\numberline {3.4.3}输入层到隐含层边权的权值更新}{9}{subsection.3.4.3}
+\contentsline {chapter}{参考文献}{10}{section*.6}
+\contentsline {chapter}{致谢}{11}{chapter*.8}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}测试}{12}{appendix.A}
+\contentsline {section}{\numberline {A.1}第一个测试}{12}{section.A.1}
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}附录测试}{13}{appendix.B}
+\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}附录测试}{14}{appendix.C}
